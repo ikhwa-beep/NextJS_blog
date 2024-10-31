@@ -16,7 +16,7 @@ jobs:
       - name: Build Docker Image
         run: docker build -t ikhwa/nextjs-blog .
       - name: Login to Docker Hub
-        run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ user.DOCKER_PASSWORD }}
+        run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
       - name: Publish image to docker hub
         run: docker push ikhwa/nextjs-blog:latest
     
