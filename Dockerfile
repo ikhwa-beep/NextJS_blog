@@ -1,4 +1,4 @@
-from node:20-alpine3.19 as builder
+from node:19.5.0-alpine as builder
 
 WORKDIR /app
 COPY package*.json ./
