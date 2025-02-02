@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
 
   let footer = (
     <footer>
+      <p>login here <Link href={'/login'}>login</Link></p>
       <p> Made by Ikhwanul </p>
 
     </footer>
